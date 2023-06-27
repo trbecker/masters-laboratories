@@ -1,0 +1,11 @@
+[Unit]
+Description=Create a netns
+
+[Service]
+Type=oneshot
+ExecStart=ip netns add %i
+ExecStop=ip netns del %i
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

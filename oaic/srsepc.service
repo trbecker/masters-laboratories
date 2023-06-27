@@ -1,0 +1,9 @@
+[Unit]
+Description=SRS Enhanced Packet Core
+
+[Service]
+ExecStart=/usr/local/bin/srsepc
+Type=exec
+
+[Install]
+WantedBy=default.target
